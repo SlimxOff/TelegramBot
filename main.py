@@ -42,7 +42,7 @@ def Hello_Message(message):
 def Second_Number_Step(message):
     global NUM_first
     NUM_first = int(message.text)
-    message = bot.send_message(message.chat.id, 'Введите верзнюю границу диапазона')
+    message = bot.send_message(message.chat.id, 'Введите верхнюю границу диапазона')
     bot.register_next_step_handler(message, Result_Number_Step)
 
 
